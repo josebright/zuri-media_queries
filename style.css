@@ -10,11 +10,14 @@ body{
     background-position: center;
     background-size: cover;
     margin-top: 13em;
+    height: 100vh;
+    margin: 0;
 }
 
 main{
     display: flex;
     width: 70em;
+    height: 100vh;
     margin: auto;
     align-items: center;
 }
@@ -33,6 +36,11 @@ main{
     margin-bottom: 0.5em;
 }
 
+.text-padding {
+    padding: 0 0 0 1em;
+    width: 95%;
+}
+
 .box2a{
     background-color:hsl(249, 10%, 26%);
     line-height: 5em;
@@ -40,6 +48,7 @@ main{
     text-align: center;
     border-radius: 4px;
     margin-bottom: 2em;
+    align-items: center;
 }
 
 .box2b{
@@ -54,7 +63,7 @@ input{
     width: 100%;
     height: 5em;
     margin: 1em auto;
-    padding: 0 0.2em;
+    /* padding: 0 0.5em; */
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -71,13 +80,11 @@ input{
   }
 
   @media screen and (max-width: 767px) {
-    body{
-        margin-top: 8em;
-    }
     main{
         display: block;
         width: 100%;
         margin: auto;
+        text-align: center;
     }
     .box{
         width: 100%;
@@ -86,4 +93,11 @@ input{
         padding: 0;
         margin-bottom: 5em;
     }
+    .box2b{
+        width: auto;
+        background-color: hsl(0, 100%, 74%);
+    }
+    span{
+        color: rgb(255, 7, 7);
+      }
   }
